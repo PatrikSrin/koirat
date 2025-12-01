@@ -94,6 +94,18 @@ main {
   flex: 1;
 }
 
+main.container {
+  display: block;              /* disablee gridin Vaan "MEISTA" sivulle */
+  grid-template-columns: none; 
+  text-align: center;         
+}
+
+main.container img {
+  margin: 1rem auto;
+  max-width: 90%;
+  height: auto;
+}
+
 aside {
   background: #f4f4f4;
   padding: 1rem;
@@ -167,6 +179,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

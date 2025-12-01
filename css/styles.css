@@ -1,70 +1,21 @@
-/* GENERAL RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* MF DOOM Accordion */
-.menu {
-  list-style: none;
-  background: #333;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #444;
-}
-
-.menu li a,
-.accordion-toggle {
-  display: block;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
-  background: #333;
-  border: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-}
-
-.menu li a:hover,
-.accordion-toggle:hover {
-  background: #444;
-}
-
-.dropdown-content {
-  display: none;
-  background: #444;
-  list-style: none;
-  padding-left: 0;
-}
-
-.dropdown-content li a {
-  padding: 0.75rem 1rem;
-  display: block;
-  color: white;
-}
-
-.dropdown-content li a:hover {
-  background: #555;
-}
-
-
-.dropdown.active .dropdown-content {
-  display: block;
-}
-
-
+/* BODY */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden; 
 }
 
+/* CONTAINER */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -78,9 +29,10 @@ header {
   padding: 1rem;
   text-align: center;
   border-bottom: 5px solid #388E3C;
+  width: 100%;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav ul {
   display: flex;
   justify-content: center;
@@ -92,15 +44,44 @@ nav ul li {
   margin: 0.5rem;
 }
 
-nav ul li a {
+nav ul li a,
+.accordion-toggle {
+  display: block;
+  padding: 1rem;
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: 2px solid transparent;
+  background: #333;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+.accordion-toggle:hover {
+  background: #444;
   border: 2px solid white;
+}
+
+/* DROPDOWN */
+.dropdown-content {
+  display: none;
+  background: #444;
+  list-style: none;
+}
+
+.dropdown-content li a {
+  padding: 0.75rem 1rem;
+  display: block;
+  color: white;
+}
+
+.dropdown-content li a:hover {
+  background: #555;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
 }
 
 /* GRID */
@@ -109,27 +90,51 @@ main {
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   padding: 1rem;
-  flex: 1; 
+  flex: 1;
 }
 
 aside {
   background: #f4f4f4;
   padding: 1rem;
   border: 1px solid #ccc;
+  word-wrap: break-word;
 }
 
 article {
   background: #fff;
   padding: 1rem;
   border: 1px solid #ccc;
+  word-wrap: break-word;
 }
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+article img {
+  max-width: 90%; 
+  margin: 0 auto;  
+}
+
+.responsive-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 
 footer {
   background: #333;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: auto; 
+  margin-top: auto;
+  width: 100%;
 }
 
 
@@ -141,23 +146,4 @@ footer {
   nav ul {
     flex-direction: column;
   }
-/* Mobiiliin korjaus jottei header olis liian pieni */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-header, footer {
-  width: 100%;
-}
-
-
-body {
-  overflow-x: hidden;
-}
-
-article, aside {
-  word-wrap: break-word;
 }

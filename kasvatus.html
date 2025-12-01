@@ -40,5 +40,25 @@
   <footer>
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
   </footer>
+  <script>
+    const toggles = document.querySelectorAll('.accordion-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const parent = toggle.parentElement;
+        
+        // Close other dropdowns
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          if (drop !== parent) {
+            drop.classList.remove('active');
+          }
+        });
+
+        // Toggle current dropdown
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
+</html>
+
 </html>

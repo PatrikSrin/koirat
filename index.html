@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="kuvat/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="kuvat/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="kuvat/favicon-16x16.png">
-<link rel="kuvat/site.webmanifest">
+<link rel="manifest" href="kuvat/site.webmanifest">
 </head>
 
 <body>
@@ -22,13 +22,13 @@
   <ul class="menu">
     <li><a href="index.html">Koti</a></li>
     <li class="dropdown">
-      <a href="#">Koirista</a>
+      <button class="accordion-toggle">Koirista</button>
       <ul class="dropdown-content">
-        <li><a href="Koirista.html">Elinikä</a></li>
-        <li><a href="kasvatus.html">Kasvatus</a></li>
-        <li><a href="kasvattajia.html">Kasvattajia</a></li>
-      </ul>
-    </li>
+      <li><a href="koirista.html">Elinikä</a></li>
+      <li><a href="kasvatus.html">Kasvatus</a></li>
+      <li><a href="kasvattajia.html">Kasvattajia</a></li>
+    </ul>
+  </li>
     <li><a href="meista.html">Tietoja meistä</a></li>
     <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
   </ul>
@@ -78,5 +78,6 @@ toggles.forEach(toggle => {
 </script>
 </body>
 </html>
+
 
 

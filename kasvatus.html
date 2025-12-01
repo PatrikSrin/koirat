@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Koirarotuinfo: Kasvatus </title>
+  <title>Koirarotuinfo: Kasvatus</title>
   
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -25,7 +25,7 @@
     <ul class="menu">
       <li><a href="index.html">Koti</a></li>
       <li class="dropdown">
-        <!-- Accordion -->
+        <!-- Accordion Menu -->
         <a href="#" class="accordion-toggle">Koirista</a>
         <ul class="dropdown-content">
           <li><a href="Koirista.html">Elinikä</a></li>
@@ -37,28 +37,43 @@
       <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
     </ul>
   </nav>
-    <main class="container">
-       
- 
-    </main>
+
+  <main>
+    <!-- Sidebar -->
+    <aside>
+      <h2>Koirien kasvatus, checklist</a> <br></h2>
+      <p>1. Aika </p>
+      <p>2. Elämäntilanne </p>
+      <p>3. Lapsia nyt, tulossa? </p>
+      <p>4. Raha </p>
+      <p>5. Oikeat syyt </p>
+      
+    </aside>
+
+    <article>
+      <h2>Koiran kasvatus ja mietteet ennen koiran hankintaa </h2>
+      <p>Koiran kasvattaminen on rankkaa, mutta myös hyvinkin palkitsevaa. </p>
+    </article>
+  </main>
 
   <footer>
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
   </footer>
+
+  <!-- Accordion scripti -->
   <script>
     const toggles = document.querySelectorAll('.accordion-toggle');
     toggles.forEach(toggle => {
       toggle.addEventListener('click', () => {
         const parent = toggle.parentElement;
         
-        // Close other dropdowns
+        // Sulkee muut dropdownit
         document.querySelectorAll('.dropdown').forEach(drop => {
           if (drop !== parent) {
             drop.classList.remove('active');
           }
         });
 
-        // Toggle current dropdown
         parent.classList.toggle('active');
       });
     });
@@ -66,7 +81,10 @@
 </body>
 </html>
 
-</html>
+
+
+
+
 
 
 

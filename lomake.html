@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fin">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Koirarotuinfo: Koti</title>
+  
+<link rel="stylesheet" href="styles.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="site.webmanifest">
+</head>
+
+  <header>
+    <h1>Koirarotuinfo</h1>
+  </header>
+ 
+<body> 
+<nav>
+  <ul class="menu">
+    <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\nettisivu.html">Koti</a></li>
+    <li class="dropdown">
+      <a href="#">Koirista</a>
+      <ul class="dropdown-content">
+        <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\koirista.html">Elinikä</a></li>
+        <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\kasvatus.html">Kasvatus</a></li>
+        <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\kasvattajia.html">Kasvattajia</a></li>
+      </ul>
+    </li>
+    <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\meista.html">Tietoja meistä</a></li>
+    <li><a href="C:\Users\patrik.sarin\OneDrive - Wihuri\Työpöytä\General\AMK\website\lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
+  </ul>
+</nav>
+    <main class="container">
+        <h1>Minkä rodun valitsit?</h1>
+        <h2>Meitä kiinnostaa kovasti minkä rodut hankit / olet hankkimassa! Täyttämällä kyselyn et liity mihinkään listaan tai muuuhunkaan. Voit jättää halutessasi kysymyksen tai kommentin, johon pyrimme vastaamaan mahdollisimman nopeasti! Dataa kerätään tulevaisuuden parannuksia varten! Kiitos!</h2>
+        <form name="harjoitus" action="#" method="post" target="_blank">
+            <!--for pitää olla sama kuin id-->
+            <label for="nimi">Nimi*:</label>
+            <input type="text" id="nimi" name="nimi" placeholder="Etunimi Sukunimi" required autofocus>
+            <!--sähköposti-->
+            <label for="sposti">Sähköposti*:</label>
+            <input type="email" id="sposti" name="sposti" required>
+            <!-- rotu -->
+            <label for="rotu">Rotu, jonka valitsit*:</label>
+            <input type="text" id="rotu" name="rotu" placeholder="Rotu" required autofocus>
+            
+            <!--radio-->
+            <fieldset id="spuoli">
+                <legend>Sukupuoli:</legend>
+                <label class="radio" for="nainen">
+                    <input class="radio-input" type="radio" id="nainen" name="sukupuoli" value="Nainen">Nainen</label>
+                    <br>
+                    <label class="radio" for="mies">
+                    <input class="radio-input" type="radio" id="mies" name="sukupuoli" value="Mies">Mies</label>
+            </fieldset>
+
+ 
+            <!--textare-->
+            <label for="lisatietoja">Lisätietoja:</label>
+            <textarea id="lisatietoja" name="lisatietoja" rows="4" placeholder="Kirjoita viestisi tähän"></textarea>
+ 
+            <!--Tiedoston lataus-->
+            <label for="tiedosto">Halutessasi voit ladata kuvan lemmikistäsi!</label>
+            <input type="file" id="tiedosto" name="tiedosto">
+ 
+            <!--Lähetä ja tyhjennä painikkeet-->
+            <!--Oma lohko, että saadaan painikkeet vierekkäin-->
+            <div class="laheta">
+                <button type="submit">Lähetä</button>
+                <button type="reset">Tyhjennä</button>
+            </div>
+ 
+       
+        </form>
+ 
+    </main>
+
+  <footer>
+    <p>&copy; 2025 Patrik Sarin ATIS24K</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+ <style>
+    /* GENERAL RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Aukeeva menu */
+.menu {
+  list-style: none;
+  display: flex;
+  background: #333;
+}
+
+.menu li {
+  position: relative; 
+}
+
+.menu li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #444; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #444;
+  list-style: none;
+  min-width: 150px;
+}
+
+.dropdown-content li a {
+  padding: 0.75rem;
+  color: white;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background: #555;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 5px solid #388E3C; 
+    }
+
+  
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background: #333;
+    }
+
+    nav ul li {
+      margin: 0.5rem; 
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+    }
+
+    nav ul li a:hover {
+      border: 2px solid white;
+    }
+
+    /* GRID */
+    main {
+      display: grid; 
+      grid-template-columns: 1fr 2fr; 
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    aside {
+      background: #f4f4f4;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    article {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    /* FOOTER */
+    footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    }
+
+    /* RESPONSIVE LAYOUT */
+    @media (max-width: 768px) {
+      main {
+        flex: 1;
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+    }
+     .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    }
+    
+  </style>

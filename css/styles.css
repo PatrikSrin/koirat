@@ -139,27 +139,19 @@ footer {
 }
 
 /* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla, hajottaa muotoilua, mutta toimii päällekäin */
+.responsive-video {
+  max-width: 100%;  
+  height: auto;    /*aspect ratio pysyy*/ 
+  display: block;
+  margin: 0 auto;   
+}
+
 @media (max-width: 768px) {
   .responsive-video {
-    max-width: 300px;
-  }
-  main {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    flex-direction: column;
+    max-width: 300px; /* Mobiilille rajoitus */
   }
 }
 
-.responsive-video {
-  max-width: 100%;   /* shrink to fit container */
-  height: auto;      /* keep aspect ratio */
-  display: block;
-  margin: 0 auto;    /* center horizontally */
-}
-
-/* videolle sama korjaus kun puhelimelle, on kohdassa .responsive-video*/
 
 
 

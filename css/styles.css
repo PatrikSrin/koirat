@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY, flex container, sivu ainakin 100vh, eli viewport height */
 body {
   display: flex;
   flex-direction: column;
@@ -15,14 +15,14 @@ body {
   overflow-x: hidden; 
 }
 
-/* CONTAINER */
+/* CONTAINER, kasvaa tilaa tarvittaessa */
 .page-container {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-/* HEADER */
+/* HEADER, vihree tausta headerille ja tausta valkonen*/
 header {
   background: #4CAF50;
   color: white;
@@ -32,18 +32,19 @@ header {
   width: 100%;
 }
 
-/* NAV */
+/* NAV, vaaka flexbox menu, tumma tausta */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   background: #333;
 }
-
+/* väliä menu objekteille */
 nav ul li {
   margin: 0.5rem;
 }
 
+/* muuttaa stylen accordionin togleille samanlaisiksi */
 nav ul li a,
 .accordion-toggle {
   display: block;
@@ -63,7 +64,7 @@ nav ul li a:hover,
   border: 2px solid white;
 }
 
-/* DROPDOWN */
+/* DROPDOWN piilossa automatic*/
 .dropdown-content {
   display: none;
   background: #444;
@@ -113,7 +114,7 @@ img {
   height: auto;
   display: block;
 }
-
+/* responsiiviset kuvat (mobiiliongelman korjausta), 90% näytön leveydestä, jotta jää vähän ylimäärästä tilaa */
 article img {
   max-width: 90%; 
   margin: 0 auto;  
@@ -137,7 +138,7 @@ footer {
   width: 100%;
 }
 
-
+/* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla, hajottaa muotoilua, mutta toimii päällekäin */
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
@@ -147,3 +148,4 @@ footer {
     flex-direction: column;
   }
 }
+

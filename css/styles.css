@@ -140,7 +140,7 @@ footer {
 
 /* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla, hajottaa muotoilua, mutta toimii päällekäin */
 .responsive-video {
-  max-width: 100%;  
+  max-width: 90%;  
   height: auto;    /*aspect ratio pysyy*/ 
   display: block;
   margin: 0 auto;   
@@ -151,6 +151,7 @@ footer {
     max-width: 300px; /* Mobiilille rajoitus */
   }
 }
+
 
 
 

@@ -66,25 +66,26 @@
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
   </footer>
 
-  <!-- Accordion script -->
+  <!-- Accordion scripti -->
   <script>
     const toggles = document.querySelectorAll('.accordion-toggle');
     toggles.forEach(toggle => {
       toggle.addEventListener('click', () => {
         const parent = toggle.parentElement;
         
-        // Close other dropdowns (optional)
+        // Sulkee muut dropdownit
         document.querySelectorAll('.dropdown').forEach(drop => {
           if (drop !== parent) {
             drop.classList.remove('active');
           }
         });
 
-        // Toggle current dropdown
+        // Toglaa currentin
         parent.classList.toggle('active');
       });
     });
   </script>
 </body>
 </html>
+
 

@@ -141,3 +141,23 @@ footer {
   nav ul {
     flex-direction: column;
   }
+/* Mobiiliin korjaus jottei header olis liian pieni */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+header, footer {
+  width: 100%;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+article, aside {
+  word-wrap: break-word;
+}

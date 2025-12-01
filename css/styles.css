@@ -29,8 +29,6 @@
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
   top: 100%;
   left: 0;
   background: #444;
@@ -147,4 +145,5 @@
     
 
   </style>
+
 

@@ -67,23 +67,16 @@
 
   <script>
  
-  const toggles = document.querySelectorAll('.accordion-toggle');
-
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const parent = toggle.parentElement;
-
-      
-      document.querySelectorAll('.dropdown').forEach(drop => {
-        if (drop !== parent) {
-          drop.classList.remove('active');
-        }
-      });
-
-      parent.classList.toggle('active');
-    });
+const toggles = document.querySelectorAll('.accordion-toggle');
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const parent = toggle.parentElement;
+    parent.classList.toggle('active');
   });
+});
+
 </script>
 </body>
 </html>
+
 

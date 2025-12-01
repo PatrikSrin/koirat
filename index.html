@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="fin">
+<html lang="fi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Koirarotuinfo: Koti</title>
   
-<link rel="stylesheet" href="css/styles.css">
-<link rel="apple-touch-icon" sizes="180x180" href="kuvat/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="kuvat/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="kuvat/favicon-16x16.png">
-<link rel="manifest" href="kuvat/site.webmanifest">
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="kuvat/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="kuvat/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="kuvat/favicon-16x16.png">
+  <link rel="manifest" href="kuvat/site.webmanifest">
 </head>
 
 <body>
@@ -18,21 +21,22 @@
     <h1>Koirarotuinfo</h1>
   </header>
   
-<nav>
-  <ul class="menu">
-    <li><a href="index.html">Koti</a></li>
-    <li class="dropdown">
-      <button class="accordion-toggle">Koirista</button>
-      <ul class="dropdown-content">
-      <li><a href="koirista.html">Elinikä</a></li>
-      <li><a href="kasvatus.html">Kasvatus</a></li>
-      <li><a href="kasvattajia.html">Kasvattajia</a></li>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Koti</a></li>
+      <li class="dropdown">
+        <!-- Accordion toggle for mobile -->
+        <button class="accordion-toggle">Koirista</button>
+        <ul class="dropdown-content">
+          <li><a href="koirista.html">Elinikä</a></li>
+          <li><a href="kasvatus.html">Kasvatus</a></li>
+          <li><a href="kasvattajia.html">Kasvattajia</a></li>
+        </ul>
+      </li>
+      <li><a href="meista.html">Tietoja meistä</a></li>
+      <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
     </ul>
-  </li>
-    <li><a href="meista.html">Tietoja meistä</a></li>
-    <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
-  </ul>
-</nav>
+  </nav>
 
   <main>
     <!-- Sidebar -->
@@ -51,13 +55,10 @@
 
     <article>
       <h2>Koirarodun valinta</h2>
-      <p>Koirarodun valinta voi tuntua monimutkaiselta ja haastavalta. Sitä se osittain onkin. Monia eri rotuja on valistettu tiettyyn tehtävään ja oma elämäntilanne ja ympäristö vaikuttaa suuresti siihen, mitä on järkevä hankkia. Tämä sivu on luotu auttamaan tämän ongelman kanssa. Tervetuloa Koirarotuinfoon! </p>
-            <div>
-            <p>
-                <img src="kuvat/etusivukoirat.png" width="640" height="392">
-                
-            </p>
-            </div>
+      <p>Koirarodun valinta voi tuntua monimutkaiselta ja haastavalta. Sitä se osittain onkin. Monia eri rotuja on valistettu tiettyyn tehtävään ja oma elämäntilanne ja ympäristö vaikuttaa suuresti siihen, mitä on järkevä hankkia. Tämä sivu on luotu auttamaan tämän ongelman kanssa. Tervetuloa Koirarotuinfoon!</p>
+      <div>
+        <img src="kuvat/etusivukoirat.png" width="640" height="392" alt="Koirat etusivulla">
+      </div>
     </article>
   </main>
 
@@ -65,19 +66,24 @@
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
   </footer>
 
+  <!-- Accordion script -->
   <script>
- 
-const toggles = document.querySelectorAll('.accordion-toggle');
-toggles.forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    const parent = toggle.parentElement;
-    parent.classList.toggle('active');
-  });
-});
+    const toggles = document.querySelectorAll('.accordion-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const parent = toggle.parentElement;
+        
+        // Close other dropdowns (optional)
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          if (drop !== parent) {
+            drop.classList.remove('active');
+          }
+        });
 
-</script>
+        // Toggle current dropdown
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-

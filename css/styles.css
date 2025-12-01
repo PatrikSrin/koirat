@@ -141,7 +141,7 @@ footer {
 /* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla, hajottaa muotoilua, mutta toimii päällekäin */
 @media (max-width: 768px) {
   .responsive-video {
-    max-width: 300px; /* or any size you prefer */
+    max-width: 300px;
   }
   main {
     grid-template-columns: 1fr;
@@ -151,5 +151,6 @@ footer {
     flex-direction: column;
   }
 }
+
 
 

@@ -147,10 +147,24 @@ footer {
 }
 
 @media (max-width: 768px) {
+    main {
+    display: block;          /* stack children vertically */
+  }
+
+  aside, article {
+    width: 90%;             /* each takes full width */
+  }
+
+  table {
+    max-width: 90%;         /* prevent table overflow */
+    display: block;
+    overflow-x: auto;        /* allow horizontal scroll if needed */
+  }
   .responsive-video {
     max-width: 300px; /* Mobiilille rajoitus */
   }
 }
+
 
 
 

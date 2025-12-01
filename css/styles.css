@@ -147,23 +147,27 @@ footer {
 }
 
 @media (max-width: 768px) {
-    main {
-    display: block;          /* stack children vertically */
+  main {
+    display: block;             
+    grid-template-columns: none; 
   }
 
   aside, article {
-    width: 90%;             /* each takes full width */
+    width: 90%;                
+    margin: 0 auto;            
   }
 
   table {
-    max-width: 90%;         /* prevent table overflow */
+    max-width: 90%; 
     display: block;
-    overflow-x: auto;        /* allow horizontal scroll if needed */
+    overflow-x: auto;
   }
+
   .responsive-video {
-    max-width: 300px; /* Mobiilille rajoitus */
+    max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

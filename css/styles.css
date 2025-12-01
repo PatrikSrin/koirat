@@ -36,6 +36,8 @@
   background: #444;
   list-style: none;
   min-width: 150px;
+  position: absolute;
+  z-index: 1000;
 }
 
 .dropdown-content li a {
@@ -141,4 +143,5 @@
     min-height: 100vh; 
     }
     
+
   </style>

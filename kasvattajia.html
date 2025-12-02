@@ -40,17 +40,21 @@
       <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
     </ul>
   </nav>
-    <main class="container">
-      <H1> Koirarodun valinta </H1>
-      <H2> Tässä seuraa rotuja, ja asioita, joita ottaa huomioon. Alle on listattu tilanteita, joihin tietty rotu sopisi hyvin. </H2>
-      <h3> 1. Perhe, jossa isä, äiti ja lapsia. Asumismuoto: Omakotitalo pihan kanssa. </h3>
-      <h4> Tämä on ihanteellinen tilanne todella monelle koiralle. Parhaat valinnat ovat yleensä seurallisia koiria, jotka ovat hyviä niin lasten luoman kaaoksen, kun hiljaisten koti-iltojen kanssa. </h4>
-      <h3> Vaihtoehtoja: </h3>
-      <h3> Ensimmäisen koiran omistajalle: </h3>
-      <h3> Kultainen Noutaja: </h3>
-      <h4> Kultsis infoo + kuva johon tekstiä </h4>
- 
-    </main>
+<main>
+  <h1>Koirarodun valinta</h1>
+  <h2>Tässä seuraa rotuja, ja asioita, joita ottaa huomioon. Alle on listattu tilanteita, joihin tietty rotu sopisi hyvin.</h2>
+  <h3>1. Perhe, jossa isä, äiti ja lapsia. Asumismuoto: Omakotitalo pihan kanssa.</h3>
+
+  <button id="toggleButton">Näytä lisää</button>
+
+  <div id="extraContent" style="display: none;">
+    <h4>Tämä on ihanteellinen tilanne todella monelle koiralle...</h4>
+    <h3>Vaihtoehtoja:</h3>
+    <h3>Ensimmäisen koiran omistajalle:</h3>
+    <h3>Kultainen Noutaja:</h3>
+    <h4>Kultsis infoo + kuva johon tekstiä</h4>
+  </div>
+</main>
 
   <footer>
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
@@ -73,8 +77,22 @@
       });
     });
   </script>
+  <!-- Scripti napille -->
+  <script>
+  document.getElementById("toggleButton").addEventListener("click", function () {
+    const content = document.getElementById("extraContent");
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      this.textContent = "Piilota";
+    } else {
+      content.style.display = "none";
+      this.textContent = "Näytä lisää";
+    }
+  });
+</script>
 </body>
 </html>
+
 
 
 

@@ -190,14 +190,6 @@ footer {
    
 }
 
-header img.logo {
-  /* Yritys #100500 korjata logoa */
-  max-width: 200px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
 @media (max-width: 768px) {
   main {
@@ -220,6 +212,14 @@ header img.logo {
     max-width: 300px;            /* videon koko cap */
   }
 }
+/* Headerin korjaus, jottei ole PC FULL SCREEN */
+header img.logo {
+  width: 200px !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
 
 
 

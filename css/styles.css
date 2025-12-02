@@ -187,11 +187,15 @@ footer {
   width: 100%;            
   text-align: center;        /* määrittelee logon keskelle */
 }
+   
+}
 
-.logo-link img.logo {
-  width: 10%;                /* skaalaa kuvan, muuten liian iso */
+header img.logo {
+  max-width: 200px !important; /* Header imaage liian iso muuten */
+  width: 100%;
   height: auto;
-  display: inline-block;     
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -215,6 +219,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

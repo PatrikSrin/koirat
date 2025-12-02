@@ -7,7 +7,7 @@
 
 /* BODY, flex container, sivu ainakin 100vh, eli viewport height */
 body {
-  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/background_final.png') no-repeat center center !important;
+  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/background_big.png') no-repeat center center !important;
   background-size: 100% 100%;
   background-color: #000; /* Jos image failaa */
   font-family: Arial, sans-serif;
@@ -236,6 +236,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

@@ -181,6 +181,14 @@ footer {
   margin: 0 auto;   
 }
 
+/* Logon asetukset */
+.logo {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   main {
     display: block;             
@@ -202,6 +210,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

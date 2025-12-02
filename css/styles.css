@@ -284,6 +284,15 @@ header img.logo {
   display: block;
 }
 
+.image-caption {
+  font-size: 0.9em;   /* piemepi teksti kuvalle */
+  font-style: italic; /* cursive kuville */
+  text-align: left; 
+  margin-top: 5px; 
+  color: #555;
+}
+
+
 
 
 

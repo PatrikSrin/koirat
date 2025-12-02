@@ -222,8 +222,10 @@ header img.logo {
  /* Jos se on <a>, joka strechaa sitä kuvaa koko näytölle ;.; */
 .logo-link {
   display: inline-block;
-  text-align: center;
+  text-align: left;
+  padding-left; 1rem;
 }
+
 
 
 

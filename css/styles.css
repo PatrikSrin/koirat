@@ -320,5 +320,7 @@ header img.logo {
 }
   /* intro text antaa tilaa jotta saa kaunistettua sivua "intron" jälkeen */ 
 .intro-text {
-  margin-bottom: 3rem;
+  text-align: center; /* keskelle teksti, autto varsinkin Roduista sivulla*/
+  margin-bottom: 3rem; 
 }
+

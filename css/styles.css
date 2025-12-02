@@ -191,7 +191,8 @@ footer {
 }
 
 header img.logo {
-  max-width: 200px !important; /* Header imaage liian iso muuten */
+  /* Yritys #100500 korjata logoa */
+  max-width: 200px;
   width: 100%;
   height: auto;
   display: block;
@@ -219,6 +220,7 @@ header img.logo {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

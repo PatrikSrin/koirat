@@ -309,3 +309,12 @@ header img.logo {
   color: #ffcc00;
   text-decoration: underline; /* alaviivaa kun hoveraa linkin päälle */
 
+.warning-text {
+  color: red;          
+  background-color: #222;      /* tumma background */
+  padding: 0.5rem;        
+  border-radius: 4px;          /* pyöristetyt kulmat */
+  font-weight: bold;           /* Ottaa esille */
+  display: block;
+  margin: 0.5rem 0;       
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Koirarotuinfo: Muistilista</title>
+  
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Faviconit -->
+  <link rel="apple-touch-icon" sizes="180x180" href="kuvat/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="kuvat/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="kuvat/favicon-16x16.png">
+  <link rel="manifest" href="kuvat/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <h1>Koirarotuinfo</h1>
+  </header>
+  
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Koti</a></li>
+      <li class="dropdown">
+        <!-- Accordion Menu -->
+        <a href="#" class="accordion-toggle">Koirista</a>
+        <ul class="dropdown-content">
+          <li><a href="Koirista.html">Elinikä</a></li>
+          <li><a href="kasvatus.html">Kasvatus</a></li>
+          <li><a href="kasvattajia.html">Kasvattajia</a></li>
+        </ul>
+      </li>
+      <li><a href="meista.html">Tietoja meistä</a></li>
+      <li><a href="lomake.html">Minkä rodun valitsit / Ota yhteyttä!</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Sidebar, jossa checkbox auttaa "checklistissä" -->
+<aside>
+  <h2>Koirien kasvatus, checklist</h2>
+  <ul class="checklist">
+    <li><input type="checkbox"> Koiran oston hinta </li>
+    <li><input type="checkbox"> Eläinlääkäri säästöt </li>
+    <li><input type="checkbox"> Vakuutukset </li>
+    <li><input type="checkbox"> Pihan aitaaminen </li>
+    <li><input type="checkbox"> Koiran liikkumisen rajoittaminen tarpeen mukaan </li>
+  </ul>
+</aside>
+    
+    <article>
+      <h2>Koiran kasvatus ja mietteet ennen koiran hankintaa </h2>
+      <p>Koiran kasvattaminen on rankkaa, mutta myös hyvinkin palkitsevaa.  </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Patrik Sarin ATIS24K</p>
+  </footer>
+
+  <!-- Accordion scripti -->
+  <script>
+    const toggles = document.querySelectorAll('.accordion-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const parent = toggle.parentElement;
+        
+        // Sulkee muut dropdownit
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          if (drop !== parent) {
+            drop.classList.remove('active');
+          }
+        });
+
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

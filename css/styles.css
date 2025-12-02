@@ -185,7 +185,7 @@ footer {
 .logo-link {
   display: inline-block;    
   width: 100%;            
-  text-align: center;        /* määrittelee logon keskelle */
+  text-align: left;        /* määrittelee logon vasemmalle */
 }
    
 }
@@ -225,6 +225,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

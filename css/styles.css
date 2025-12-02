@@ -217,7 +217,9 @@ header img.logo {
   width: 120px !important;
   height: auto !important;
   display: block;
-  margin: 0 auto;
+  margin-left: 1rem; /* Laittaa vasemmalle logon välin kanssa */
+  margin-right: 0;
+}
 }
  /* Jos se on <a>, joka strechaa sitä kuvaa koko näytölle ;.; */
 .logo-link {
@@ -225,6 +227,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

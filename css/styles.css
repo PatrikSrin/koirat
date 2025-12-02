@@ -287,10 +287,11 @@ header img.logo {
 .image-caption {
   font-size: 0.9em;   /* piemepi teksti kuvalle */
   font-style: italic; /* cursive kuville */
-  text-align: left; 
+  text-align: center; 
   margin-top: 5px; 
   color: #555;
 }
+
 
 
 

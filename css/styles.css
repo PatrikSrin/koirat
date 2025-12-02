@@ -184,7 +184,7 @@ footer {
 /* Logon asetukset */
 .logo {
   width: 60%;
-  height: 60%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -210,6 +210,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

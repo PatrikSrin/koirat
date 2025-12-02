@@ -94,6 +94,13 @@ main {
   flex: 1;
 }
 
+.container {
+  max-width: 800px;   /* tekstin leveys alue */
+  margin: 0 auto;     /* keskittää tekstin */
+  padding: 20px;      
+  line-height: 1.6;   /* Riviväli */
+}
+
 main.container {
   display: block;              /* disablee gridin Vaan "MEISTA" sivulle */
   grid-template-columns: none; 
@@ -179,6 +186,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

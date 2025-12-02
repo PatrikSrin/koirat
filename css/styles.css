@@ -35,8 +35,7 @@ header {
   background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/background_final.png') no-repeat center center !important;
   background-size: cover;
   color: white;
-  padding: 0.5rem 0;
-  border-bottom: 5px solid #2563EB;
+  padding: 0;
   width: 100%;
   min-height: 200px;
 }
@@ -235,6 +234,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

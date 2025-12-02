@@ -34,7 +34,7 @@ main, aside, article {
 /* HEADER, kuva tylsän taustan sijaan*/
 header {
   background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/header_final.png') no-repeat center center !important;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
   padding: 0;
   width: 100%;
@@ -235,6 +235,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

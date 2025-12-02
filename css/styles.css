@@ -291,3 +291,17 @@ header img.logo {
 .accordion-content li {
   margin: 0.3rem 0;
 }
+
+/* Tehdään koiralinkeistä valkoisia ja bold jotta olisi helpompi lukea */
+.accordion-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+

@@ -223,7 +223,7 @@ footer {
 }
 /* Headerin korjaus, jottei ole PC FULL SCREEN */
 header img.logo {
-  width: 120px !important;
+  width: 200px !important;
   height: auto !important;
   display: block;
   margin-left: 1rem; /* Laittaa vasemmalle logon välin kanssa */
@@ -236,6 +236,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

@@ -189,7 +189,7 @@ footer {
 }
 
 .logo-link img.logo {
-  width: 60%;                /* skaalaa kuvan, muuten liian iso */
+  width: 10%;                /* skaalaa kuvan, muuten liian iso */
   height: auto;
   display: inline-block;     
 }
@@ -215,6 +215,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

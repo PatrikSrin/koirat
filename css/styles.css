@@ -7,7 +7,7 @@
 
 /* BODY, flex container, sivu ainakin 100vh, eli viewport height */
 body {
-  background: url('kuvat/headeri.png') no-repeat center center fixed;
+  background: url('https://github.com/PatrikSrin/koirat/blob/a5a3869dd5b4ecf57a3dab99b13fba9658c0443e/kuvat/headeri.png') no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -32,7 +32,7 @@ main, aside, article {
 
 /* HEADER, kuva tylsän taustan sijaan*/
 header {
-  background: url('kuvat/headeri.png') no-repeat center center;
+  background: url('https://github.com/PatrikSrin/koirat/blob/a5a3869dd5b4ecf57a3dab99b13fba9658c0443e/kuvat/headeri.png') no-repeat center center;
   background-size: cover;
   color: white;
   padding: 0.5rem 0;
@@ -235,6 +235,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

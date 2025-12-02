@@ -318,3 +318,7 @@ header img.logo {
   display: block;
   margin: 0.5rem 0;       
 }
+  /* intro text antaa tilaa jotta saa kaunistettua sivua "intron" jälkeen */ 
+.intro-text {
+  margin-bottom: 3rem;
+}

@@ -17,7 +17,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
- /* Luettavuuteen, transparent koska tausta ei pitäisi haitata lukua */
+
+/* Luettavuuteen, transparent koska tausta ei pitäisi haitata lukua */
 main, aside, article {
   background-color: transparent;
   padding: 1rem;
@@ -48,6 +49,7 @@ nav ul {
   list-style: none;
   background: #333;
 }
+
 /* väliä menu objekteille */
 nav ul li {
   margin: 0.5rem;
@@ -159,6 +161,7 @@ img {
   height: auto;
   display: block;
 }
+
 /* responsiiviset kuvat (mobiiliongelman korjausta), 90% näytön leveydestä, jotta jää vähän ylimäärästä tilaa */
 article img {
   max-width: 90%; 
@@ -173,7 +176,6 @@ article img {
   display: block;
 }
 
-
 footer {
   background: #333;
   color: #fff;
@@ -183,23 +185,7 @@ footer {
   width: 100%;
 }
 
-/* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla, hajottaa muotoilua, mutta toimii päällekäin */
-.responsive-video {
-  max-width: 90%;  
-  height: auto;    /*aspect ratio pysyy*/ 
-  display: block;
-  margin: 0 auto;   
-}
-
-/* Logon asetukset */
-.logo-link {
-  display: inline-block;    
-  width: 100%;            
-  text-align: left;        /* määrittelee logon vasemmalle */
-}
-   
-
-
+/* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla */
 @media (max-width: 768px) {
   main {
     display: block;             
@@ -221,6 +207,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 /* Headerin korjaus, jottei ole PC FULL SCREEN */
 header img.logo {
   width: 200px !important;
@@ -230,44 +217,14 @@ header img.logo {
   margin-right: 0;
 }
 
- /* Jos se on <a>, joka strechaa sitä kuvaa koko näytölle ;.; */
+/* Jos se on <a>, joka strechaa sitä kuvaa koko näytölle ;.; */
 .logo-link {
   display: block;
   text-align: left;
   padding-left: 1rem;
 }
- /* nappula sivulle "rodun valinta", jotta toimii scripti*/
-#toggleButton {
-  padding: 0.2rem 0.5rem; 
-  font-size: 0.8rem;  
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  width: 50px;              /* leveys napille */
-  display: inline-block;   
-}
 
-#toggleButton:hover {
-  background-color: #555;
-}
-/* Vähän animaatioo napille */
-#extraContent {
-  transition: all 0.3s ease-in-out;
-}
-
-/* Perhanan bulletpointit pois */
-#extraContent ul {
-  list-style: none;
-  padding-left: 0;   /* Poistaa indentin */
-  margin-left: 0;
-}
-
-#extraContent li {
-  margin: 0.3rem 0;
-}
-/* Modal auttaa avamaan "Roduista" sivun vaihtoehdot kun nappia painaa ilman, että koko sivu menee sekaisin*/
+/* Modal (optional) */
 .modal {
   display: none;
   position: fixed;
@@ -285,41 +242,52 @@ header img.logo {
 }
 
 .image-caption {
-  font-size: 0.9em;   /* piemepi teksti kuvalle */
-  font-style: italic; /* cursive kuville */
+  font-size: 0.9em;   /* pienempi teksti kuvalle */
+  font-style: italic; /* kursivoitu kuville */
   text-align: center; 
   margin-top: 5px; 
   color: #555;
 }
 
+/* ------------------------------
+   Accordion jatke jotta toimii Rodut sivulla
+   ------------------------------ */
+.accordion-section {
+  margin-bottom: 1rem;
+}
 
+.accordion-button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+}
 
+.accordion-button:hover {
+  background-color: #555;
+}
 
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 0.5rem;
+}
 
+.accordion-content.open {
+  max-height: 1000px; /* tarpeeksi iso jotta contentti mahtuu */
+}
 
+.accordion-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.accordion-content li {
+  margin: 0.3rem 0;
+}

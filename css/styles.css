@@ -27,7 +27,7 @@ header {
   background: url('kuvat/headeri.png') no-repeat center center;
   background-size: cover;
   color: white;
-  padding: 1rem;
+  padding: 0;
   border-bottom: 5px solid #2563EB;
   width: 100%;
 }
@@ -227,28 +227,3 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

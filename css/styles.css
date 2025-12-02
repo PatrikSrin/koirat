@@ -22,13 +22,13 @@ body {
   flex: 1;
 }
 
-/* HEADER, vihree tausta headerille ja tausta valkonen*/
+/* HEADER, kuva tylsän taustan sijaan*/
 header {
-  background: #4CAF50;
+  background: url('kuvat/headeri.png') no-repeat center center;
+  background-size: cover;
   color: white;
   padding: 1rem;
-  text-align: center;
-  border-bottom: 5px solid #388E3C;
+  border-bottom: 5px solid #2563EB;
   width: 100%;
 }
 
@@ -227,6 +227,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

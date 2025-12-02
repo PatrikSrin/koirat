@@ -214,7 +214,7 @@ footer {
 }
 /* Headerin korjaus, jottei ole PC FULL SCREEN */
 header img.logo {
-  width: 200px !important;
+  width: 120px !important;
   height: auto !important;
   display: block;
   margin: 0 auto;
@@ -225,6 +225,7 @@ header img.logo {
   text-align: left;
   padding-left: 1rem;
 }
+
 
 
 

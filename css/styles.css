@@ -251,6 +251,11 @@ header img.logo {
 #toggleButton:hover {
   background-color: #555;
 }
+/* Vähän animaatioo napille */
+#extraContent {
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 

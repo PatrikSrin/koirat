@@ -182,11 +182,16 @@ footer {
 }
 
 /* Logon asetukset */
-.logo {
-  width: 60%;
+.logo-link {
+  display: inline-block;    
+  width: 100%;            
+  text-align: center;        /* määrittelee logon keskelle */
+}
+
+.logo-link img.logo {
+  width: 60%;                /* skaalaa kuvan, muuten liian iso */
   height: auto;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;     
 }
 
 @media (max-width: 768px) {
@@ -210,6 +215,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

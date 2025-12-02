@@ -127,6 +127,22 @@ article {
   word-wrap: break-word;
 }
 
+.checklist {
+  list-style: none;       /* poistaa bulletpointit */
+  padding: 0;
+}
+
+.checklist li {
+  margin: 8px 0;          
+  display: flex;          /* asettelua laatikoille */
+  align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 10px;     /* tilaa tekstin ja boxin väliin */
+  transform: scale(1.2);
+}
+
 /* IMAGES */
 img {
   max-width: 100%;
@@ -186,6 +202,7 @@ footer {
     max-width: 300px;            /* videon koko cap */
   }
 }
+
 
 
 

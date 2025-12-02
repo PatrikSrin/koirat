@@ -219,6 +219,11 @@ header img.logo {
   display: block;
   margin: 0 auto;
 }
+ /* Jos se on <a>, joka strechaa sitä kuvaa koko näytölle ;.; */
+.logo-link {
+  display: inline-block;
+  text-align: center;
+}
 
 
 

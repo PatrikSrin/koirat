@@ -152,19 +152,41 @@
     <p>&copy; 2025 Patrik Sarin ATIS24K</p>
   </footer>
 
-  <script>
-    document.querySelectorAll(".accordion-button").forEach(button => {
-      button.addEventListener("click", function () {
-        const targetId = this.getAttribute("data-target");
-        const content = document.getElementById(targetId);
+<script>
 
-        content.classList.toggle("open");
-        this.textContent = content.classList.contains("open") ? "Piilota" : "Näytä";
-      });
+  // Accordion menun scripti (rotu valintaan)
+  document.querySelectorAll(".accordion-button").forEach(button => {
+    button.addEventListener("click", function () {
+      const targetId = this.getAttribute("data-target");
+      const content = document.getElementById(targetId);
+
+      content.classList.toggle("open");
+      this.textContent = content.classList.contains("open") ? "Piilota" : "Näytä";
     });
-  </script>
+  });
+
+// Navi menun scripti 
+  const toggles = document.querySelectorAll('.accordion-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const parent = toggle.parentElement;
+
+      // Suelkee muut valikot
+      document.querySelectorAll('.dropdown').forEach(drop => {
+        if (drop !== parent) {
+          drop.classList.remove('active');
+        }
+      });
+
+      parent.classList.toggle('active');
+    });
+  });
+</script>
 </body>
+
+  
 </html>
+
 
 
 

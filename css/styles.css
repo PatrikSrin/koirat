@@ -188,6 +188,11 @@ footer {
 
 /* korjaa ongelman alle 768px leveillä näytöillä, eli puhelimilla */
 @media (max-width: 768px) {
+
+    .article-grid {
+    grid-template-columns: 1fr; /* one per row */
+  }
+  
   main {
     display: block;             
     grid-template-columns: none; 
@@ -357,6 +362,7 @@ header img.logo {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+
 
 
 

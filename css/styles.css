@@ -343,6 +343,22 @@ header img.logo {
   border-radius: 8px;
 }
 
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Artikkelei kaks per rivi */
+  gap: 2rem;                            
+  max-width: 1200px;                     /* Artikkelit menee keskeltä */
+  margin: 0 auto;                        /* keskittää gridit */
+}
+
+.article-grid article {
+  background: #fff;                    
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
 
 
 

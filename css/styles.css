@@ -364,12 +364,17 @@ header img.logo {
 }
 /* TOP 10 listalle atribuutteja */ 
 .top10 {
-  max-width: 800px;          /* keeps it nicely centered */
-  margin: 2rem auto;         /* centers horizontally with spacing above/below */
-  padding: 2rem;             /* space inside the box */
-  background-color: #f0f8ff; /* light background (AliceBlue) */
-  border-radius: 10px;       /* rounded corners */
-  text-align: center;        /* centers heading and list numbers */
+  max-width: 800px;
+  width: 90%;
+  margin: 2rem auto;         
+  padding: 2rem;          
+  background-color: #f0f8ff; 
+  border-radius: 10px;      
+  text-align: center;        /* keskittää listan ja numerot */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top10 h2 {
@@ -389,6 +394,7 @@ header img.logo {
 .top10 li {
   margin: 0.5rem 0;
 }
+
 
 
 

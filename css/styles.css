@@ -206,6 +206,9 @@ footer {
   .responsive-video {
     max-width: 300px;            /* videon koko cap */
   }
+    .accordion-grid {
+    grid-template-columns: 1fr; /* auttaa jos on paljon valikoita auki yhden per rivi puhelimella (rotu sivulla) */
+  }
 }
 
 /* Headerin korjaus, jottei ole PC FULL SCREEN */
@@ -324,4 +327,16 @@ header img.logo {
   margin-bottom: 3rem; 
 }
 
+  .accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* kaksi valikkoa per rivi */
+  gap: 2rem;                   
+  max-width: 1200px;                     /* auttaa keskittämään */
+  margin: 0 auto;                        /* koko homma keskelle */
+}
+
+.accordion-section {
+  padding: 1rem;
+  border-radius: 8px;
+}
 

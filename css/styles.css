@@ -250,7 +250,7 @@ header img.logo {
   font-style: italic; /* kursivoitu kuville */
   text-align: center; 
   margin-top: 5px; 
-  color: #555;
+  color: #000;
 }
 
 /* ------------------------------
@@ -340,6 +340,7 @@ header img.logo {
   padding: 1rem;
   border-radius: 8px;
 }
+
 
 
 

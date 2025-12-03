@@ -34,12 +34,13 @@ main, aside, article {
 
 /* HEADER, kuva tylsän taustan sijaan*/
 header {
-  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/header_perfect_final.png') center center no-repeat !important;
-  background-size: cover;       /* Pitäisi täyttää isoillakin näytöillä automaattisesti */
-  color: yellow;
-  padding: 0;
-  width: 100%;
+  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/header_perfect_final.png') center center no-repeat;
+  background-size: cover;   /* skaalaa täyttääksen tilan */
+  width: 100vw;             /* full viewport korkeus */
+  max-width: 100%;          /* ylilyö muut säännöt */
   min-height: 250px;
+  color: yellow;
+  display: block;
 }
 
 /* NAV, vaaka flexbox menu, tumma tausta */
@@ -339,4 +340,5 @@ header img.logo {
   padding: 1rem;
   border-radius: 8px;
 }
+
 

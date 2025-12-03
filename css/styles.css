@@ -7,9 +7,9 @@
 
 /* BODY, flex container, sivu ainakin 100vh, eli viewport height */
 body {
-  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/Background_big.png') no-repeat center center !important;
-  background-size: 100% 100%;
-  background-color: #000; /* Jos image failaa */
+  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/Background_big.png') center center no-repeat !important;
+  background-size: cover;       /* Pitäisi isoillakin näytöillä nyt näkyä tausta */
+  background-color: #ADD8E6;       /* Jossei se kuitenkaan näy */
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -34,9 +34,9 @@ main, aside, article {
 
 /* HEADER, kuva tylsän taustan sijaan*/
 header {
-  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/header_perfect_final.png') no-repeat center center !important;
-  background-size: 100% 100%;
-  color: white;
+  background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/header_perfect_final.png') center center no-repeat !important;
+  background-size: cover;       /* Pitäisi täyttää isoillakin näytöillä automaattisesti */
+  color: yellow;
   padding: 0;
   width: 100%;
   min-height: 250px;
@@ -323,4 +323,5 @@ header img.logo {
   text-align: center; /* keskelle teksti, autto varsinkin Roduista sivulla*/
   margin-bottom: 3rem; 
 }
+
 

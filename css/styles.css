@@ -364,26 +364,32 @@ header img.logo {
 }
 /* TOP 10 listalle atribuutteja */ 
 .top10 {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 8px;
+  max-width: 800px;          /* keeps it nicely centered */
+  margin: 2rem auto;         /* centers horizontally with spacing above/below */
+  padding: 2rem;             /* space inside the box */
+  background-color: #f0f8ff; /* light background (AliceBlue) */
+  border-radius: 10px;       /* rounded corners */
+  text-align: center;        /* centers heading and list numbers */
 }
 
 .top10 h2 {
-  text-align: center;
+  font-size: 2rem;           /* bigger heading */
   margin-bottom: 1rem;
 }
 
 .top10 ol {
-  padding-left: 1.5rem;
+  list-style-position: inside; /* numerot ei muuten järkevästi taustan sisällä */
+  font-size: 1.2rem;           /* luettavuus, isompi fontti kun tärkeää */
+  padding: 0;                  
+  margin: 0 auto;              /* keskittää listan */
+  text-align: center;            /* teksti listalle  */
+  display: inline-block;       
 }
 
 .top10 li {
   margin: 0.5rem 0;
-  font-weight: bold;
 }
+
 
 
 

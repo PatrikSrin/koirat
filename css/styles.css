@@ -362,6 +362,29 @@ header img.logo {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+/* TOP 10 listalle atribuutteja */ 
+.top10 {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.top10 h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.top10 ol {
+  padding-left: 1.5rem;
+}
+
+.top10 li {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
 
 
 

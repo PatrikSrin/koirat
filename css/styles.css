@@ -9,7 +9,7 @@
 body {
   background: url('https://raw.githubusercontent.com/PatrikSrin/koirat/main/kuvat/Background_big.png') center center no-repeat !important;
   background-size: cover;       /* Pitäisi isoillakin näytöillä nyt näkyä tausta */
-  background-color: #ADD8E6;       /* Jossei se kuitenkaan näy */
+  background-color: #64bcd9;       /* Jossei se kuitenkaan näy */
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -340,6 +340,7 @@ header img.logo {
   padding: 1rem;
   border-radius: 8px;
 }
+
 
 
 

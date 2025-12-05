@@ -395,6 +395,19 @@ header img.logo {
   margin: 0.5rem 0;
 }
 
+.image-row {
+  display: flex;
+  flex-wrap: wrap;      /* kuvat menee päällekäin kapeella ruudulla (sivua "Meista" varten) */
+  gap: 1rem;         
+  justify-content: center;
+}
+
+.image-row figure {
+  flex: 1 1 300px;      /* Min 300px fexible */
+  margin: 0;
+}
+
+
 
 
 
